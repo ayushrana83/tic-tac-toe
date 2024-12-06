@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background: rgb(109, 108, 108);
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 51, 51);
+    height: 70px;
+    color:  rgb(245, 235, 219);
+}
+nav ul
+{
+    list-style: none;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.gamecontainer
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+    padding: 0 12px;
+}
+.container
+{
+    display: grid;
+    grid-template-rows: repeat(3,11vw);
+    grid-template-columns: repeat(3,11vw);
+    background-color: wheat;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    
+    display:flex ;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: gray;
+}
+
+.gameinfo
+{
+    padding: 0 34px; 
+}
+
+.br-0{
+    border-right:0;
+}
+.bl-0{
+    border-left:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+
+.info{
+    font-size: xx-large;
+} 
+.gamecontainer .h1
+    {
+        font-size: 1.7rem;
+    }
+.gameinfo button{
+    font-size: x-large;
+    height: 40px;
+    width: 90px;
+    font-weight:bold;
+}
+
+.imgdance img{
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+@media screen and (max-width:920px)
+{
+    .gamecontainer
+    {
+        flex-wrap: wrap;
+    } 
+    .gameinfo{
+        margin-top: 45px;
+
+    }
+    .gamecontainer .h1
+    {
+        font-size: 1rem;
+    }
+    .container
+    {
+        grid-template-rows: repeat(3,22vw);
+        grid-template-columns: repeat(3,22vw);
+    }
+}
+
+.strike
+{
+    text-decoration-color: rgb(238, 77, 109);
+    text-decoration-line: line-through;
+    transition: 2s ease-in-out;
+}
+
